@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: uploaded_files
+#
+#  id         :integer          not null, primary key
+#  converted  :boolean
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class UploadedFile < ApplicationRecord
   has_one_attached :pdf_file
   has_one_attached :text_file

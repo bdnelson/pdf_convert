@@ -1,0 +1,19 @@
+detectors:
+  UncommunicativeModuleName:
+    accept:
+      - V1
+  IrresponsibleModule:
+    enabled: false
+  TooManyStatements:
+    exclude:
+      - from_params
+    max_statements: 15
+  UncommunicativeVariableName:
+    accept:
+      - idx
+      - e
+
+directories:
+  "app/controllers":
+    InstanceVariableAssumption:
+      enabled: false

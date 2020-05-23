@@ -1,0 +1,5 @@
+#!/bin/bash
+
+bundle exec rubocop app spec && \
+    bundle exec rubycritic app --no_browser && \
+    bundle exec rspec
