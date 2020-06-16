@@ -38,7 +38,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development do
   gem "capistrano", "~> 3.10", require: false
-  gem "capistrano-rails", "~> 1.3", require: false
+  gem "capistrano-rails", "~> 1.5", require: false
+  gem "capistrano-bundler", '~> 1.6'
   gem 'capistrano-passenger'
   gem 'ed25519'
   gem 'bcrypt_pbkdf'
